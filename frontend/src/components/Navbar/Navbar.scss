@@ -1,0 +1,151 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@500&display=swap');
+
+$Lexend_Peta: 'Lexend Peta', sans-serif;
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 120px;
+        height: 80px;
+        padding-left: 10rem;
+        padding-top: 1rem;
+        
+        @media screen and (max-width: 1279px) {
+            padding-left: .5rem;
+        }
+    }
+}
+
+.navbar-links {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding-right: 13rem;
+
+    li {
+        margin: 0rem 1rem;
+        cursor: pointer;
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: none;
+        flex-direction: column;
+        // font-family: $Lexend_Peta;
+        font-size: 100%;
+        line-height: 2rem;
+        color: black;
+
+
+    }
+
+    :hover {
+        color: #e57200;
+    }
+
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+}
+
+
+
+.navbar-menu {
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: #3498DB;
+    background: black;
+    margin-right: 1rem;
+
+    svg {
+        width: 80%;
+        height: 80%;
+        color: white;
+    }
+
+    div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        padding: 1rem;
+
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+
+        background: wh;
+        background-color: white;
+        background-size: cover;
+        background-repeat: repeat;
+
+        box-shadow: 0 0 20px rgb(168, 168, 168, 0.15);
+
+        svg {
+            width: 35px;
+            height: 35px;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+
+
+            li {
+                margin: 1rem;
+                color: black;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-family: $Lexend_Peta;
+
+                }
+            }
+        }
+
+        @media screen and (min-width: 1279px) {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1279px) {
+        display: none;
+    }
+}

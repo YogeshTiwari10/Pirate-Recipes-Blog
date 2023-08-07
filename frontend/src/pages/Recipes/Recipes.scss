@@ -1,0 +1,162 @@
+.recipes{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f8f8;
+
+    @media screen and (max-width: 1279px) {
+        flex-direction: column;
+    }
+}
+
+.recipes_blog{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+
+    }
+}
+
+.recipes_blog_heading{
+    margin-left: 5rem;
+    width: 80%;
+    margin-bottom: -2rem;
+
+    @media screen and (max-width: 1279px) {
+        width: 80%;
+        margin: auto;
+    }
+
+    h1{
+       background-color: #EEEEEE;
+       padding: 2rem;
+       font-size: 3rem;
+       font-weight: 600;
+    }
+
+}
+
+.recipes_blog_data{
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    border-bottom: 2px solid #EEEEEE;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+.recipes_blog_data_background{
+
+    border-bottom: 4px solid #EEEEEE;
+}
+
+.recipes_blog_data_card{
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        margin: 0.5rem 0rem;
+    }
+
+    p{
+        font-size: 1rem;
+        margin: 0.5rem 0rem;
+    }
+
+}
+
+
+
+.recipes_button{
+    margin: 1rem 0rem;
+}
+
+.recipes_blog_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    margin: 4rem auto;  
+
+    @media screen and (max-width: 1279px) {
+        width: 90%;
+        }
+}
+
+
+.recipes_blog_button_search{
+    width: 30%;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+    }
+}
+
+.search_button{
+    width: 308px;
+    border: 2px solid #dddddd;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+    }
+
+    input{
+        padding: 14px 13px 16px 15px;
+        background-color: #f9f8f8;
+        border: none;
+        font-size: 1rem;
+
+        @media screen and (max-width: 1279px) {
+            width: 100%;
+        }
+    }
+
+    button{
+        padding: 15px 17px;
+        border: none;
+        font-size: 1rem;
+
+        @media screen and (max-width: 1279px) {
+            width: 100%;
+        }
+    }
+    
+}
+
+.recipes_blog_button_blogs{
+    width: 100%;
+
+    h2{
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+.comment{
+    color: #000000;
+}

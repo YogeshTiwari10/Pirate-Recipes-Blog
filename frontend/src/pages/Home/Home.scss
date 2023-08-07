@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+.home {
+    margin-top: 0px;
+    min-height: 80vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.home_banner {
+    background-image: url('../../assets/banner1.jpeg');
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_banner_logo {
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.home_banner_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    h1 {
+        font-size: 3.6rem;
+        color: white;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2.6rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 1.7rem;
+        }
+
+        @media screen and (max-width: 309px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.home_banner_text {
+    width: 40%;
+    margin: 1rem auto;
+
+    @media screen and (max-width: 1279px) {
+        width: 60%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+
+
+.recent_recipes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recent_recipes_heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #9aca3e;
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 352px) {
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 280px) {
+        font-size: 1rem;
+    }
+}
+
+.recent_recipes_posts{
+    width: 80%;
+    margin: auto;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: auto;
+}
+.product-card{
+    cursor: pointer;
+     transform: scale(1, 1);
+     transition: transform 0.5s ease;
+    color: #324d67;
+   
+   }
+//    .product-card:hover{
+//      transform: scale(1.1,1.1)
+//    }
+   .product-image{
+     border-radius: 15px;
+    background-color: #ebebeb;
+     transform: scale(1, 1);
+     transition: transform 0.8s ease;
+
+     &:hover{
+        transform: scale(1.1,1.1)
+     }
+   }
+   
+   .product-name{
+     text-align: left;
+     margin-top: 1rem;
+     width: 300px;
+     color: #000000 !important;
+     font-size: 1.6rem;
+     font-family: 'Merriweather', serif;
+     text-decoration: none;
+
+     @media screen and (max-width: 320px) {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+   }
+
+
+   .yellow_border{
+    width: 100px;
+    margin: 3rem 0px;
+    border-bottom: 4px solid #f38315;
+   }

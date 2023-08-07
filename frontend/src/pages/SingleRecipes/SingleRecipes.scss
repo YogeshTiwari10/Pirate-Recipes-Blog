@@ -1,0 +1,256 @@
+.single_recipes{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #f9f8f8;
+
+    @media screen and (max-width: 1279px) {
+        flex-direction: column;
+    }
+}
+
+.single_recipes_blog{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+    }
+}
+
+
+.single_recipes_blog_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    border-bottom: 2px solid #EEEEEE;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+        margin: auto;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    h1{
+        width: 80%;
+        margin: 1rem 0rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #9aca3e;
+    }
+    p{
+        width: 80%;
+        margin: 0rem 0rem 2rem;
+    }
+}
+
+.block_data{
+    width: 80%;
+    h2{
+        color: #9aca3e;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}
+
+.blog_button{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: #fcb900;
+        transition: all .3s linear;
+    }
+}
+
+
+.recipes_blog_button_single{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    margin: 4rem auto;  
+
+    @media screen and (max-width: 1279px) {
+        width: 90%;
+        margin-top: -3rem !important;
+        }
+}
+
+
+// comment Section 
+
+.comment_body{
+    margin: 1rem auto;
+    width: 100%;
+
+    @media screen and (max-width: 1279px) {
+        margin: 0rem auto;
+    }
+}
+
+.comment_background{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+    }
+}
+
+.comment_box{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 1rem;
+    width: 80%;
+    text-align: left;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+        margin: auto;
+    }
+
+    h2{
+        color: #9aca3e;
+        @media screen and (max-width: 1279px) {
+            width: 90%;
+            margin: auto;
+        }
+    }
+
+    form{
+
+        margin-bottom: 3rem;
+
+        @media screen and (max-width: 1279px) {
+            width: 90%;
+            margin: 0rem auto 3rem;
+        }
+
+        input{
+            width: 600px;
+            font-size: 15px;
+            padding: 10px;
+            margin: 1rem 0rem;
+            background-color: #f9f8f8;
+            border: 2px solid #ddd;
+
+            @media screen and (max-width: 1279px) {
+                width: 90%;
+            }
+        }
+
+        textarea{
+            width: 616px;
+            height: 7rem;
+            font-size: 15px;
+            margin: 1rem 0rem;
+            background-color: #f9f8f8;
+            border: 2px solid #ddd;
+            
+            @media screen and (max-width: 1279px) {
+                width: 92%;
+            }
+            @media screen and (max-width: 647px) {
+                width: 93%;
+            }
+            @media screen and (max-width: 380px) {
+                width: 95%;
+            }
+        }
+
+        button{
+            font-size: 1rem;
+            padding: .8rem 1rem;
+            background-color: #f38315;
+            border: none;
+            color: white;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #e57200;
+            }
+        }
+    }
+}
+
+
+// user comment 
+
+.user_comment{
+    width: 100%;
+    margin: 2rem auto;
+}
+.user_comment-data{
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1279px) {
+        width: 100%;
+    }
+    
+    h2{
+        width: 80%;
+        color: #9aca3e;
+        margin: 2rem auto;
+
+        @media screen and (max-width: 1279px) {
+            width: 100%;
+            margin: 2rem 2rem;
+        }
+    }
+}
+
+.comment_fields{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1rem auto;
+
+    .comment_avatar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            border-radius: 50px;
+            margin-right: 15px;
+            margin-bottom: 5px;
+        }
+    }
+
+    h6{
+        font-size: 1.2rem;
+        font-weight:400;
+        margin: 0;
+    }
+
+    p{
+        margin: 0;
+    }
+}
+
+
