@@ -4,7 +4,7 @@ import './Footer.scss'
 const Footer = () => {
   return (
     <div className="footer">
-        <p>Copyright © 2023 Sanji The Cook</p>
+        <p>Copyright © 2023 Yogesh Tiwari</p>
     </div>
   )
 }
